@@ -1,0 +1,238 @@
+/*
+Theme Name: Dorayaki
+Description: Used to style the TinyMCE editor.
+*/
+
+* {
+	color: inherit;
+	font-family: 'Domine', Georgia, serif;
+	font-size:17px;
+	font-style: inherit;
+	line-height: 1.8;
+}
+body {
+	color: #3f3f3f;
+	font-family: 'Domine', Georgia, serif;
+	font-size:17px;
+	font-weight: normal;
+	line-height: 1.8;
+}
+
+/* --- Headlines --- */
+h1, h2, h3, h4, h5, h6 {
+	color: #3f3f3f;
+	font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+	font-weight: bold;
+	text-rendering: optimizeLegibility;
+	word-wrap: break-word;
+}
+h1 {
+	font-size:26px;
+}
+h2 {
+	font-size: 20px;
+}
+h3 {
+	font-size: 18px;
+}
+h4 {
+	font-size:16px;
+}
+h5 {
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+h6 {
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+/* --- Text Elements --- */
+p {
+	margin: 0 0 24px;
+	font-family: 'Domine', Georgia, serif;
+	line-height:1.7;
+}
+p strong {
+	font-weight: bold !important;
+}
+em {
+	font-style: italic;
+}
+p small {
+	font-size: .8em;
+}
+blockquote {
+	color: #9e9e9e;
+}
+blockquote p {
+	font-size:18px;
+	font-size:1.125rem;
+}
+blockquote cite {
+	display:inline-block;
+	padding: 15px 0 0 0;
+	font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+	font-size: 12px;
+	font-size: 0.75rem;
+	font-weight: bold;
+	font-style: normal;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+pre {
+	background: #efefef;
+	font-family: Consolas, Monaco, monospace;
+	font-size: 14px;
+	font-size: 0.8125rem;
+	line-height: 1.4;
+	margin-bottom: 20px;
+	padding: 15px;
+	overflow: auto;
+	max-width: 100%;
+}
+address{
+	padding:0 0 30px; 
+	line-height:1.7;
+}
+abbr,acronym {
+	border-bottom:.1em dotted;
+}
+mark, ins {
+	background: #fff9c0;
+	color: #3f3f3f;
+	text-decoration: none;
+}
+/* --- Images --- */
+img, .page img {
+	max-width:100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+img[class*="wp-image-"] {
+	height: auto;
+	max-width: 97.5%;
+}
+img.size-full {
+	width: auto; /* Prevent stretching of full-size images in IE8 */
+}
+img.wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+p img,
+.wp-caption {
+	margin-top: 0.4em;
+}
+.wp-caption {
+	border: none;
+	text-align: center;
+	background-color: #fff;
+	-webkit-border-radius:0;
+	border-radius: 0;
+}
+.wp-caption-dd {
+	font-size: 14px;
+	line-height: 17px;
+	padding: 15px 0 15px;
+	font-style:italic;
+	text-align:center;
+}
+img {
+	border: none;
+}
+img.alignleft,
+img.alignright,
+img.aligncenter {
+	margin-bottom: 1.625em;
+}
+.wp-caption {
+	width:auto !important;
+	max-width: 100%;
+	text-align: left;
+}
+.wp-caption .wp-caption-text {
+	margin: 0;
+	padding: 8px 0 10px;
+	font-size:.85em;
+}
+/* --- Tables --- */
+table {
+	font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border-bottom: 1px solid #eaeaea;
+	line-height: 2;
+	margin: 0 0 40px;
+	width: 100%;
+	font-size:14px;
+	font-size:0.875rem;
+}
+table td {
+	border-top: 1px solid #eaeaea;
+	padding: 6px 10px 6px 0;
+}
+table caption {
+	margin: 40px 0;
+}
+table th {
+	font-weight: bold;
+	text-align:left;
+}
+
+/* --- List Elements --- */
+ol {
+	list-style:  decimal;
+	margin:0 0 30px 20px;
+}
+ul {
+    list-style: disc;
+	 margin:0 0 30px 20px;
+}
+ol ol,
+ul ul {
+	 margin:0 0 0 20px;
+}
+ul li,
+ol li {
+	display: list-item;
+	margin: 0;
+	padding: 0;
+	line-height:1.8;
+}
+/* --- Links --- */
+a,
+a em,
+a strong {
+	color: #92dadd;
+	font-weight:bold;
+	text-decoration:none;
+}
+a:focus,
+a:active,
+a:hover {
+	text-decoration: underline;
+	color:#2aa3b2;
+}
+/* --- Alignment --- */
+.alignleft,
+.alignright {
+	float: none;
+	display: block;
+}
+.aligncenter {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	clear: both;
+}
+img.alignleft,
+img.alignright {
+	margin-top:10px;
+	margin-bottom:10px;
+}
