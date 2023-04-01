@@ -52,8 +52,6 @@
 
  </footer><!-- end #colophon -->
 
-<?php endif; ?>
-
 <?php wp_footer(); ?>
 
 </body>
