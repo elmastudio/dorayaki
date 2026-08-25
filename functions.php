@@ -754,3 +754,14 @@ function dorayaki_shortcode_contact_info($atts, $content = null) {
 	 return '<div class="contact-info">' . do_shortcode( dorayaki_remove_wpautop($content) ) . '</div>';
 }
 add_shortcode( 'contact_info', 'dorayaki_shortcode_contact_info' );
+
+/* __php8_option_defaults: never let the theme options be false or miss a key (PHP 8). */
+function dorayaki_php8_option_defaults( $options = array() ) {
+	$fallback = array_fill_keys( array( 'custom_footertext', 'bg_color', 'boxesbg_color', 'headerbg_color', 'footerbg_color', 'link_color', 'linkhover_color', 'headerwidgetbg_color', 'custom_logo', 'show-excerpt', 'custom_favicon', 'custom_apple_icon', 'share-posts', 'share-singleposts', 'use-slider', 'slider_color', 'custom-css' ), '' );
+	if ( function_exists( 'dorayaki_get_default_theme_options' ) ) {
+		$fallback = array_merge( $fallback, (array) dorayaki_get_default_theme_options() );
+	}
+	return wp_parse_args( is_array( $options ) ? $options : array(), $fallback );
+}
+add_filter( 'default_option_dorayaki_theme_options', 'dorayaki_php8_option_defaults' );
+add_filter( 'option_dorayaki_theme_options', 'dorayaki_php8_option_defaults' );

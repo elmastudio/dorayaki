@@ -22,6 +22,7 @@ class dorayaki_flickr extends WP_Widget {
 	}
 
 	public function widget($args, $instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'title' => '', 'id' => '', 'number' => '', 'type' => '', 'sorting' => '' ) );
 		extract( $args );
 		$title = $instance['title'];
 		$id = $instance['id'];
@@ -50,6 +51,7 @@ class dorayaki_flickr extends WP_Widget {
 	 }
 
 	 function form($instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'title' => '', 'id' => '', 'number' => '', 'type' => '', 'sorting' => '' ) );
 		$title = esc_attr($instance['title']);
 		$id = esc_attr($instance['id']);
 		$number = esc_attr($instance['number']);
@@ -110,6 +112,7 @@ class dorayaki_headerinfo extends WP_Widget {
 	}
 
 	public function widget($args, $instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'headerinfotop' => '', 'headerinfobottom' => '' ) );
 		extract( $args );
 		$headerinfotop = $instance['headerinfotop'];
 		$headerinfobottom = $instance['headerinfobottom'];
@@ -135,6 +138,7 @@ class dorayaki_headerinfo extends WP_Widget {
 	 }
 
 	 function form($instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'headerinfotop' => '', 'headerinfobottom' => '' ) );
 		$headerinfotop = esc_attr($instance['headerinfotop']);
 		$headerinfobottom = esc_attr($instance['headerinfobottom']);
 		?>
@@ -169,6 +173,7 @@ class dorayaki_video extends WP_Widget {
 	}
 
 	public function widget($args, $instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'title' => '', 'embedcode' => '' ) );
 		extract( $args );
 		$title = $instance['title'];
 		$embedcode = $instance['embedcode'];
@@ -194,6 +199,7 @@ class dorayaki_video extends WP_Widget {
 	 }
 
 	 function form($instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'title' => '', 'embedcode' => '' ) );
 		$title = esc_attr($instance['title']);
 		$embedcode = esc_attr($instance['embedcode']);
 		?>
@@ -229,6 +235,7 @@ register_widget('dorayaki_video');
 	}
 
 	public function widget($args, $instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'title' => '', 'twitter' => '', 'facebook' => '', 'googleplus' => '', 'appnet' => '', 'flickr' => '', 'instagram' => '', 'picasa' => '', 'fivehundredpx' => '', 'youtube' => '', 'vimeo' => '', 'dribbble' => '', 'ffffound' => '', 'pinterest' => '', 'behance' => '', 'deviantart' => '', 'squidoo' => '', 'slideshare' => '', 'lastfm' => '', 'grooveshark' => '', 'soundcloud' => '', 'foursquare' => '', 'github' => '', 'linkedin' => '', 'xing' => '', 'wordpress' => '', 'tumblr' => '', 'rss' => '', 'rsscomments' => '' ) );
 		extract( $args );
 		$title = $instance['title'];
 		$twitter = $instance['twitter'];
@@ -423,6 +430,7 @@ register_widget('dorayaki_video');
 	 }
 
 	 function form($instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'title' => null, 'twitter' => null, 'facebook' => null, 'googleplus' => null, 'appnet' => null, 'flickr' => null, 'instagram' => null, 'picasa' => null, 'fivehundredpx' => null, 'youtube' => null, 'vimeo' => null, 'dribbble' => null, 'ffffound' => null, 'pinterest' => null, 'behance' => null, 'deviantart' => null, 'squidoo' => null, 'slideshare' => null, 'lastfm' => null, 'grooveshark' => null, 'soundcloud' => null, 'foursquare' => null, 'github' => null, 'linkedin' => null, 'xing' => null, 'wordpress' => null, 'tumblr' => null, 'rss' => null, 'rsscomments' => null ) );
 		$title = esc_attr( isset( $instance['title'] ) ? $instance['title'] : "" );
 		$twitter = esc_attr( isset( $instance['twitter'] ) ? $instance['twitter'] : "" );
 		$facebook = esc_attr( isset( $instance['facebook'] ) ? $instance['facebook'] : "" );
@@ -621,6 +629,7 @@ class dorayaki_testimonial extends WP_Widget {
 	}
 
 	public function widget($args, $instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'testimonialtext' => '', 'testimonialimg' => '', 'testimonialauthor' => '', 'testimoniallink' => '', 'testimoniallinkurl' => '', 'testimoniallink2' => '', 'testimoniallinkurl2' => '' ) );
 		extract( $args );
 		$testimonialtext = $instance['testimonialtext'];
 		$testimonialimg = $instance['testimonialimg'];
@@ -665,6 +674,7 @@ class dorayaki_testimonial extends WP_Widget {
 	 }
 
 	 function form($instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'testimonialtext' => '', 'testimonialimg' => '', 'testimonialauthor' => '', 'testimoniallink' => '', 'testimoniallinkurl' => '', 'testimoniallink2' => '', 'testimoniallinkurl2' => '' ) );
 		$testimonialtext = esc_attr($instance['testimonialtext']);
 		$testimonialimg = esc_attr($instance['testimonialimg']);
 		$testimonialauthor = esc_attr($instance['testimonialauthor']);
@@ -733,6 +743,7 @@ class dorayaki_testimonialright extends WP_Widget {
 	}
 
 	public function widget($args, $instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'testimonialrighttext' => '', 'testimonialrightimg' => '', 'testimonialrightauthor' => '', 'testimonialrightlink' => '', 'testimonialrightlinkurl' => '', 'testimonialrightlink2' => '', 'testimonialrightlinkurl2' => '' ) );
 		extract( $args );
 		$testimonialrighttext = $instance['testimonialrighttext'];
 		$testimonialrightimg = $instance['testimonialrightimg'];
@@ -778,6 +789,7 @@ class dorayaki_testimonialright extends WP_Widget {
 	 }
 
 	 function form($instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'testimonialrighttext' => '', 'testimonialrightimg' => '', 'testimonialrightauthor' => '', 'testimonialrightlink' => '', 'testimonialrightlinkurl' => '', 'testimonialrightlink2' => '', 'testimonialrightlinkurl2' => '' ) );
 		$testimonialrighttext = esc_attr($instance['testimonialrighttext']);
 		$testimonialrightimg = esc_attr($instance['testimonialrightimg']);
 		$testimonialrightauthor = esc_attr($instance['testimonialrightauthor']);
@@ -846,6 +858,7 @@ class dorayaki_team extends WP_Widget {
 	}
 
 	public function widget($args, $instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'teamname' => '', 'teamimg' => '', 'teamposition' => '', 'teamtext' => '', 'teamquote' => '', 'teamlink' => '', 'teamlinkurl' => '', 'teamlink2' => '', 'teamlinkurl2' => '' ) );
 		extract( $args );
 		$teamname = $instance['teamname'];
 		$teamimg = $instance['teamimg'];
@@ -892,6 +905,7 @@ class dorayaki_team extends WP_Widget {
 	 }
 
 	 function form($instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'teamname' => '', 'teamimg' => '', 'teamposition' => '', 'teamtext' => '', 'teamquote' => '', 'teamlink' => '', 'teamlinkurl' => '', 'teamlink2' => '', 'teamlinkurl2' => '' ) );
 		$teamname = esc_attr($instance['teamname']);
 		$teamimg = esc_attr($instance['teamimg']);
 		$teamposition = esc_attr($instance['teamposition']);
@@ -972,6 +986,7 @@ class dorayaki_team_small extends WP_Widget {
 	}
 
 	public function widget($args, $instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'teamnameSmall' => '', 'teamimgSmall' => '', 'teampositionSmall' => '', 'teamquoteSmall' => '' ) );
 		extract( $args );
 		$teamnameSmall = $instance['teamnameSmall'];
 		$teamimgSmall = $instance['teamimgSmall'];
@@ -1005,6 +1020,7 @@ class dorayaki_team_small extends WP_Widget {
 	 }
 
 	 function form($instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'teamnameSmall' => '', 'teamimgSmall' => '', 'teampositionSmall' => '', 'teamquoteSmall' => '' ) );
 		$teamnameSmall = esc_attr($instance['teamnameSmall']);
 		$teamimgSmall = esc_attr($instance['teamimgSmall']);
 		$teampositionSmall = esc_attr($instance['teampositionSmall']);
@@ -1055,6 +1071,7 @@ class dorayaki_recentposts extends WP_Widget {
 	}
 
 	public function widget($args, $instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'postnumber' => '', 'cat' => '', 'thumbnail' => '' ) );
 		extract( $args );
 		$postnumber = $instance['postnumber'];
 		$cat = apply_filters('widget_title', $instance['cat']);
@@ -1140,6 +1157,7 @@ class dorayaki_recentposts extends WP_Widget {
 	 }
 
 	 function form($instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'postnumber' => '', 'cat' => '', 'thumbnail' => '' ) );
 			 $postnumber = esc_attr($instance['postnumber']);
 		$cat = esc_attr($instance['cat']);
 		$thumbnail = esc_attr($instance['thumbnail']);
@@ -1182,6 +1200,7 @@ class dorayaki_service extends WP_Widget {
 	}
 
 	public function widget($args, $instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'servicename' => '', 'serviceimg' => '', 'serviceinfo' => '', 'servicelink' => '' ) );
 		extract( $args );
 		$servicename = $instance['servicename'];
 		$serviceimg = $instance['serviceimg'];
@@ -1208,6 +1227,7 @@ class dorayaki_service extends WP_Widget {
 	 }
 
 	 function form($instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'servicename' => '', 'serviceimg' => '', 'serviceinfo' => '', 'servicelink' => '' ) );
 		$servicename = esc_attr($instance['servicename']);
 		$serviceimg = esc_attr($instance['serviceimg']);
 		$serviceinfo = esc_attr($instance['serviceinfo']);
@@ -1255,6 +1275,7 @@ class dorayaki_portfolio extends WP_Widget {
 	}
 
 	public function widget($args, $instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'portfolionumber' => '', 'portfoliocat' => '' ) );
 		extract( $args );
 		$portfolionumber = $instance['portfolionumber'];
 		$portfoliocat = apply_filters('widget_title', $instance['portfoliocat']);
@@ -1304,6 +1325,7 @@ class dorayaki_portfolio extends WP_Widget {
 	 }
 
 	 function form($instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'portfolionumber' => '', 'portfoliocat' => '' ) );
 			 $portfolionumber = esc_attr($instance['portfolionumber']);
 		$portfoliocat = esc_attr($instance['portfoliocat']);
 		?>
@@ -1338,6 +1360,7 @@ class dorayaki_contactbox extends WP_Widget {
 	}
 
 	public function widget($args, $instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'cbaddress' => '', 'cbinfo' => '', 'cbemailtitle01' => '', 'cbemail01' => '', 'cbemailtitle02' => '', 'cbemail02' => '', 'cbemailtitle03' => '', 'cbemail03' => '', 'cbmapurl' => '' ) );
 		extract( $args );
 		$cbaddress = $instance['cbaddress'];
 		$cbinfo = $instance['cbinfo'];
@@ -1393,6 +1416,7 @@ class dorayaki_contactbox extends WP_Widget {
 	 }
 
 	 function form($instance) {
+		/* __php8_keys */ $instance = wp_parse_args( (array) $instance, array( 'cbaddress' => '', 'cbinfo' => '', 'cbemailtitle01' => '', 'cbemail01' => '', 'cbemailtitle02' => '', 'cbemail02' => '', 'cbemailtitle03' => '', 'cbemail03' => '', 'cbmapurl' => '' ) );
 		$cbaddress = esc_attr($instance['cbaddress']);
 		$cbinfo = esc_attr($instance['cbinfo']);
 		$cbemailtitle01 = esc_attr($instance['cbemailtitle01']);
