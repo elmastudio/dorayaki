@@ -96,7 +96,6 @@ class dorayaki_flickr extends WP_Widget {
 	}
 }
 
-register_widget('dorayaki_flickr');
 
 /*-----------------------------------------------------------------------------------*/
 /* Dorayaki Header Info Widget
@@ -157,7 +156,6 @@ class dorayaki_headerinfo extends WP_Widget {
 	}
 }
 
-register_widget('dorayaki_headerinfo');
 
 /*-----------------------------------------------------------------------------------*/
 /* Include Dorayaki Video Widget
@@ -218,7 +216,6 @@ class dorayaki_video extends WP_Widget {
 	}
 }
 
-register_widget('dorayaki_video');
 
 
 /*-----------------------------------------------------------------------------------*/
@@ -612,7 +609,6 @@ register_widget('dorayaki_video');
 	}
 }
 
-register_widget('dorayaki_sociallinks');
 
 
 /*-----------------------------------------------------------------------------------*/
@@ -726,7 +722,6 @@ class dorayaki_testimonial extends WP_Widget {
 	}
 }
 
-register_widget('dorayaki_testimonial');
 
 
 /*-----------------------------------------------------------------------------------*/
@@ -838,7 +833,6 @@ class dorayaki_testimonialright extends WP_Widget {
 	}
 }
 
-register_widget('dorayaki_testimonialright');
 
 
 
@@ -969,7 +963,6 @@ class dorayaki_team extends WP_Widget {
 	}
 }
 
-register_widget('dorayaki_team');
 
 
 /*-----------------------------------------------------------------------------------*/
@@ -1054,7 +1047,6 @@ class dorayaki_team_small extends WP_Widget {
 	}
 }
 
-register_widget('dorayaki_team_small');
 
 
 /*-----------------------------------------------------------------------------------*/
@@ -1183,7 +1175,6 @@ class dorayaki_recentposts extends WP_Widget {
 	}
 }
 
-register_widget('dorayaki_recentposts');
 
 
 /*-----------------------------------------------------------------------------------*/
@@ -1259,7 +1250,6 @@ class dorayaki_service extends WP_Widget {
 	}
 }
 
-register_widget('dorayaki_service');
 
 /*-----------------------------------------------------------------------------------*/
 /* Dorayaki Portfolio Posts Widget for Frontpage
@@ -1344,7 +1334,6 @@ class dorayaki_portfolio extends WP_Widget {
 	}
 }
 
-register_widget('dorayaki_portfolio');
 
 /*-----------------------------------------------------------------------------------*/
 /* Dorayaki Contact Widget (for Front or/and Contact Page)
@@ -1478,4 +1467,24 @@ class dorayaki_contactbox extends WP_Widget {
 	}
 }
 
-register_widget('dorayaki_contactbox');
+
+/**
+ * Registered on widgets_init, which is where WordPress asks for it. At file
+ * scope each widget's constructor translated its own name before init, which
+ * WordPress 6.7 reports on every request.
+ */
+function dorayaki_register_widgets() {
+	register_widget( 'dorayaki_flickr' );
+	register_widget( 'dorayaki_headerinfo' );
+	register_widget( 'dorayaki_video' );
+	register_widget( 'dorayaki_sociallinks' );
+	register_widget( 'dorayaki_testimonial' );
+	register_widget( 'dorayaki_testimonialright' );
+	register_widget( 'dorayaki_team' );
+	register_widget( 'dorayaki_team_small' );
+	register_widget( 'dorayaki_recentposts' );
+	register_widget( 'dorayaki_service' );
+	register_widget( 'dorayaki_portfolio' );
+	register_widget( 'dorayaki_contactbox' );
+}
+add_action( 'widgets_init', 'dorayaki_register_widgets' );

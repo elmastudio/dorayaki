@@ -515,7 +515,7 @@ function dorayaki_widgets_init() {
 	) );
 
 }
-add_action( 'init', 'dorayaki_widgets_init' );
+add_action( 'widgets_init', 'dorayaki_widgets_init' );
 
 
 if ( ! function_exists( 'dorayaki_content_nav' ) ) :
